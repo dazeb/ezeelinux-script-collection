@@ -65,15 +65,6 @@ sudo gdebi -n google-chrome-stable_current_amd64.deb
 popd
 rm -rf /tmp/gc-install-tmp
 
-# Install Ocenaudio.
-
-mkdir /tmp/oa-install-tmp
-pushd /tmp/oa-install-tmp
-wget http://www.ocenaudio.com/downloads/index.php/ocenaudio_debian9_64.deb
-sudo gdebi -n ocenaudio_debian9_64.deb
-popd
-rm -rf /tmp/oa-install-tmp
-
 # Install mp3gain:
 
 sudo add-apt-repository -y ppa:flexiondotorg/audio -y
