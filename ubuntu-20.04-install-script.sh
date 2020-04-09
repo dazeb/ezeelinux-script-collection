@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Ubuntu (GNOME) 18.04 setup script for Dell Precision T5400.
+# Ubuntu (GNOME) 20.04 generic setup script.
 # By Joe Collins. (www.ezeelinux.com GNU/General Public License version 2.0)
 
 # Must have Gdebi!:
@@ -10,7 +10,7 @@ dpkg -l | grep -qw gdebi || sudo apt-get install -yyq gdebi
 # First, let's install a bunch of software:
 
 sudo apt install -yy openssh-server sshfs net-tools gedit-plugin-text-size \
-simplescreenrecorder libreoffice ubuntu-restricted-extras mpv vlc gthumb \
+simplescreenrecorder libreoffice ubuntu-restricted-extras parole vlc gthumb \
 gnome-tweaks chrome-gnome-shell spell synaptic gufw brasero git mc \
 rhythmbox-plugin-cdrecorder gparted youtube-dl pavucontrol handbrake audacity \
 timeshift htop grsync lame asunder soundconverter
@@ -32,22 +32,9 @@ else
 	sleep 5 # The script pauses so this message can be read. 
 fi
 
-# GNOME Boxes Installation.
-# Installation Command:
-
-sudo apt install -yy gnome-boxes qemu-kvm
-
-# Add User to kvm:
-sudo usermod -a -G kvm $USER
-
 # Remove undesirable packages:
 
 sudo apt purge deja-dup shotwell -yy
-
-# Remove snaps and get packages from apt:
-
-sudo snap remove gnome-characters gnome-calculator
-sudo apt install gnome-characters gnome-calculator -yy
 
 # Purge Firefox, install Google Chrome:
 
@@ -68,8 +55,7 @@ rm -rf /tmp/gc-install-tmp
 
 # Install mp3gain:
 
-sudo add-apt-repository -y ppa:flexiondotorg/audio -y
-sudo apt install mp3gain
+sudo snap install mp3gain
 
 # Sound "pop and click" fix. Set sound card to stay powered on all the time:
 
