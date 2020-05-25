@@ -13,7 +13,7 @@ sudo apt install -yy nvidia-340 net-tools htop grsync lame asunder soundconverte
 openssh-server sshfs gedit-plugin-text-size simplescreenrecorder libreoffice \
 ubuntu-restricted-extras mpv vlc gthumb gnome-tweaks tracker chrome-gnome-shell \
 qt5-style-plugins spell synaptic gufw brasero git mc rhythmbox-plugin-cdrecorder \
-gparted youtube-dl pavucontrol handbrake audacity
+gparted youtube-dl pavucontrol handbrake audacity cowsay
 
 # Install all local .deb packages, if available:
 

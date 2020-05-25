@@ -13,7 +13,7 @@ sudo apt install -yy openssh-server sshfs net-tools gedit-plugin-text-size \
 simplescreenrecorder libreoffice ubuntu-restricted-extras parole vlc gthumb \
 gnome-tweaks chrome-gnome-shell spell synaptic gufw brasero git mc \
 rhythmbox-plugin-cdrecorder gparted youtube-dl pavucontrol handbrake audacity \
-timeshift htop grsync lame asunder soundconverter
+timeshift htop grsync lame asunder soundconverter cowsay
 
 
 # Install all local .deb packages, if available:
