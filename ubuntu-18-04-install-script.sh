@@ -9,7 +9,7 @@ dpkg -l | grep -qw gdebi || sudo apt-get install -yyq gdebi
 
 # First, let's install a bunch of software:
 
-sudo apt install -yy nvidia-340 net-tools htop grsync lame asunder soundconverter \
+sudo apt install -yy nvidia-340 net-tools htop grsync lame sound-juicer soundconverter \
 openssh-server sshfs gedit-plugin-text-size simplescreenrecorder libreoffice \
 ubuntu-restricted-extras mpv vlc gthumb gnome-tweaks tracker chrome-gnome-shell \
 qt5-style-plugins spell synaptic gufw brasero git mc rhythmbox-plugin-cdrecorder \
