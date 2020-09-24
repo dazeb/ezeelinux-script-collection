@@ -11,7 +11,7 @@ file_sync() {
 
 echo "Syncing files to teensy file server..."
 sleep 1.5
-rsync -avH --delete --progress Audio bin Chart\ Hits\ Archive Desktop Documents \
+rsync -av --delete --progress Audio bin Chart\ Hits\ Archive Desktop Documents \
 Downloads Music Pictures Videos 192.168.0.12:/home/joe/
 
     # Check status of rsync exit:
@@ -29,7 +29,7 @@ settings_sync() {
 
 # Grab settings and put them in "teensysync-settings-backup" on teensy:
 
-rsync -avH --delete --progress .thunderbird .you_got_mail.wav .face \
+rsync -av --delete --progress .thunderbird .you_got_mail.wav .face \
 .config/google-chrome .config/libreoffice .local/share/rhythmbox .ssh/id_rsa \
 .ssr 192.168.0.12:/home/joe/teensysync-settings-backup/
 

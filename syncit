@@ -29,31 +29,31 @@ transfer_status () {
 echo $'\n'$"SyncIt: Synchronizing directories..."
 
 echo $'\n'$"Syncing bin..."
-rsync -avz --delete /home/"$USER"/bin/ "$NETIP""$HOSTIP":bin/
+rsync -av --delete /home/"$USER"/bin/ "$NETIP""$HOSTIP":bin/
 transfer_status
 
 echo $'\n'$"Syncing Desktop..."
-rsync -avz --delete /home/"$USER"/Desktop/ "$NETIP""$HOSTIP":Desktop/
+rsync -av --delete /home/"$USER"/Desktop/ "$NETIP""$HOSTIP":Desktop/
 transfer_status
 
 echo $'\n'$"Syncing Documents..."
-rsync -avz --delete /home/"$USER"/Documents/ "$NETIP""$HOSTIP":Documents/
+rsync -av --delete /home/"$USER"/Documents/ "$NETIP""$HOSTIP":Documents/
 transfer_status
 
 #echo $'\n'$"Syncing Downloads..."
-#rsync -avz --delete /home/"$USER"/Downloads/ "$NETIP""$HOSTIP":Downloads/
+#rsync -av --delete /home/"$USER"/Downloads/ "$NETIP""$HOSTIP":Downloads/
 #transfer_status
 
 echo $'\n'$"Syncing Music..."
-rsync -avz --delete /home/"$USER"/Music/ "$NETIP""$HOSTIP":Music/
+rsync -av --delete /home/"$USER"/Music/ "$NETIP""$HOSTIP":Music/
 transfer_status
 
 echo $'\n'$"Syncing Pictures..."
-rsync -avz --delete /home/"$USER"/Pictures/ "$NETIP""$HOSTIP":Pictures/
+rsync -av --delete /home/"$USER"/Pictures/ "$NETIP""$HOSTIP":Pictures/
 transfer_status
 
 #echo $'\n'$"Syncing Videos..."
-#rsync -avz --delete /home/"$USER"/Videos/ "$NETIP""$HOSTIP":Videos/
+#rsync -av --delete /home/"$USER"/Videos/ "$NETIP""$HOSTIP":Videos/
 #transfer_status
 
 echo "---------------------------
@@ -61,4 +61,3 @@ echo "---------------------------
 ---------------------------"
 
 exit
-
