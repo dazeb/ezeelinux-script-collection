@@ -101,8 +101,9 @@ These are scripts that automate setting up Ubuntu for my Dell workstation.
 They are highly customized to my needs. You can use them as a springboard to
 create your own installation scripts. 
 ```
-```oldkernrm
-
+```
+oldkernrm
+```
 This script is for CentOS. It will automatically remove all old kernels.
 I use it as a clean-up tool for my server. 
 ```
